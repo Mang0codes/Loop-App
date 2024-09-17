@@ -5,6 +5,10 @@ const liveblocks = new Liveblocks({
   secret: process.env.LIVEBLOCK_SK,
 });
 
+// Define guest credentials (these should be stored securely)
+const GUEST_EMAIL = "guest@example.com";
+const GUEST_PASSWORD = "guestpassword";
+
 export async function POST(request) {
      
   // Get the current user from your database
